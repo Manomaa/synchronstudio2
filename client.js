@@ -7762,8 +7762,8 @@ if ($("pack-file")) $("pack-file").onchange = (e) => {
 // ═════════════════════════════════════════════════════════════
 let myLines = [], curLine = 0, takes = {};   // takes: lineIdx → ArrayBuffer
 let outtakes = [];   // verworfene Takes fürs Outtakes-Reel [{lineIdx,text,t,end,buf,name,uid}]
-const OUTTAKE_MAX = 8;          // pro Spieler in der Booth
-const OUTTAKE_POOL_MAX = 24;    // gemischter Pool für die Premiere (alle zusammen)
+const OUTTAKE_MAX = 35;          // pro Spieler in der Booth
+const OUTTAKE_POOL_MAX = 140;    // gemischter Pool für die Premiere (alle zusammen)
 const OUTTAKE_MIN_BYTES = 400;  // leere/zu kurze Clips nicht behalten
 let collectedOuttakes = new Map(); // host: peerId -> outtake[]
 let outtakeUidSeq = 0;
